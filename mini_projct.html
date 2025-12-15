@@ -1,9 +1,112 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 0;
+      }
+      .container{
+        max-width: 700px;
+        margin: 40px auto;
+        background : #ffffff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      p {
+        line-height: 1.6;
+        color: #555;
+        text-align: center;
+      }
+      img{
+        display: block;
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      form {
+        margin-top: 30px;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+      }
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+
   </head>
   <body>
+    <div class="container">
+      <h1>
+        Zaferan Miftah
+      </h1>
 
+      <img src = "Saffron.jpg" alt = "Identity Picture"/>
+
+      <p>
+        I am a motivated and detail-oriented software developer with a strong interest in building practical, 
+        user-focused applications. I have hands-on experience with Flutter development, Clean Architecture,
+        and Test-Driven Development (TDD), where I focus on writing clean, maintainable, and well-tested code.
+        
+        I enjoy working with modern development tools such as Git and GitHub, collaborating on projects,
+        and continuously improving my problem-solving skills through real-world projects and coding challenges.
+        I am particularly interested in mobile and web development and enjoy learning new technologies that help turn ideas 
+        into reliable software solutions.
+        
+      </p>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
