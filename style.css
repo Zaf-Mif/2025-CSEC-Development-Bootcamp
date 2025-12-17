@@ -1,0 +1,173 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #704f4f;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.profile img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.profile p {
+    max-width: 600px;
+    font-size: 1rem;
+}
+
+/* Skills Section */
+.skills {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.skill-card {
+    background-color: #612d2d;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, 
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #612d2d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #612d2d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #644444;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    .profile p {
+        font-size: 0.9rem;
+    }
+}
