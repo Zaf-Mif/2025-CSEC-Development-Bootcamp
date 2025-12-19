@@ -1,55 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Text (ON / OFF)</title>
+
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Zaferan Miftah</h1>
-        <h2>Software Engineer </h2>
-    </header>
 
-    <!-- Profile Section -->
-    <section class="profile">
-        <img src="Saffron.jpg" alt="Profile Picture">
-        <p>Hello! I'm Zaferan, a passionate software engineer eager to learn and build real-world applications. I love exploring web development, UI/UX design, and innovative technologies that make life easier.</p>
-    </section>
+  <div class="container">
+    <h1 id="statusText">OFF</h1>
+    <button id="toggleBtn">Toggle</button>
+  </div>
 
-    <!-- Skills / Interests Section -->
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">Responsive Design</div>
-            <div class="skill-card">Flexbox & Grid</div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email">
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your Message"></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; Zaferan Miftah</p>
-    </footer>
+  <!-- Link JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
